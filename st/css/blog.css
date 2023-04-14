@@ -89,10 +89,13 @@ padding-right: 2vw;
 #blog-container{
 margin: 1vh 2vw;
 }
+
+/* benefits */
 .benefits{
 padding: 10px;
 border: 2px solid rgb(240, 240, 240);
 border-radius: 10px;
+background-color: rgb(3, 77, 95);
 }
 .benefit-hero{
  background-image: url("/images/photovoltaic-system-g1a405a63f_1920.jpg");
@@ -100,28 +103,33 @@ border-radius: 10px;
  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 10px;
 }
-.benefit-hero>h2{
-text-align: center;
-color: white;
-}
+
 .benefit-heading{
 padding: 3vh 0;
 line-height: 0.7cm;
+color: white;
 }
-.benefit-heading:last-child{
-font-size: 13px;
+.benefit-heading >p:last-child{
+color: rgb(18, 176, 216);
 }
 .blogpost{
-color: slategray;
 font-size: smaller;
+color:rgb(240, 240, 240);
 }
 article{
-font-size: 14px;
+padding: 0px 15px;
+color: white;
 }
-article figure>img{
-display: block;
-margin: auto;
+article> ul>li{
+margin-bottom: 2.5vh;
+line-height: 0.7cm;
+font-size: small;
+}
+article > ul li >span{
+color:yellow;
+font-weight: 600;
 }
 /* footer */
 footer{

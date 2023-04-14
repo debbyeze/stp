@@ -494,7 +494,7 @@ top: 5.3%;
 }
 .overlay{
 background-image: linear-gradient(to left,rgb(18, 176, 216) , black 0%);
-
+height: 80vh;
 }
 .who{
 height: 122vh;
