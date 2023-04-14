@@ -1,0 +1,582 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+ font-size: 16px;
+}
+body{
+font-family: "Merriweather", serif;
+margin: 0;
+padding: 0;
+position: relative;
+
+}
+body>div>a{
+display: none;
+}
+a{
+text-decoration: none;
+}
+.d-flex{
+display: flex;
+}
+
+
+.whatsapp{
+position: fixed;
+ bottom: 13%;
+ z-index: 5;
+ right: 0%;
+ color: black;
+ font-size: medium;
+ margin-right: 8px;
+ 
+}
+.whatsapp a > img:hover{
+ width: 60px;
+}
+.nav-top{
+background-color:rgb(3, 77, 95);
+height: 7vh;
+display: flex;
+justify-content: space-between;
+padding: 12px;
+color: white;
+}
+
+.nav-top  a{
+text-decoration: none;
+color: white;
+margin-right: 2vw;
+font-size:small;
+}
+header{
+margin-right: 15vw;
+}
+.navbar{
+height: 13vh;
+display: flex;
+background-color: #ffffff;
+padding: 20px;
+
+}
+.menu{
+display: none;
+}
+.close{
+display: none;
+}
+.navbar a{
+text-decoration: none;
+color: black;
+}
+.navbar a:active{
+border-bottom:5px solid gold;
+}
+.navbar li{
+list-style:none ;
+margin-right: 4vw;
+}
+nav ul{
+display: flex;
+padding-top: 15px;
+}
+nav ul li{
+padding-right: 2vw;
+/* border-right: 2px solid rgb(18, 176, 216); */
+}
+
+/* main */
+
+
+/* .banner */
+.banner {
+  background-image:  url("images/house\ panel.jpeg");
+  position: relative;
+  height: 73vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  animation-name: bgChange;
+  animation-timing-function:ease-in-out;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  
+}
+@keyframes bgChange{
+
+0%{
+background-image:  url("images/panel.jpeg");
+}
+
+50%{
+ background-image:  url("images/photovoltaic-system-g4b49eacb5_1920.jpg");
+}
+100%{
+  background-image:  url("images/house\ panel.jpeg");
+}
+}
+.overlay{
+background-image: linear-gradient(to left,rgb(18, 176, 216) , black 70%);
+height: 73vh;
+opacity: 0.7;
+width: 100%;
+}
+.banner-text{
+width: 700px;
+font-size: larger;
+line-height: 1cm;
+position: absolute;
+left: 5%;
+top: 5.8%;
+z-index: 2;
+color: white;
+animation: slideIn 1s linear;
+}
+.banner-text>p{
+font-size: small;
+}
+@keyframes slideIn {
+  0%{
+   left: -6%;
+  }
+  100%{
+  left: 5%;
+  }
+}
+.banner-text >button{
+width: 180px;
+height: 50px;
+outline: none;
+border-radius: 15px;
+border: none;
+background-color: yellow;
+margin-top: 20px;
+}
+.banner-text > button:hover{
+background-color: rgb(18, 176, 216);
+
+}
+.banner-text button >a{
+  text-decoration: none;
+  color: rgb(3, 77, 95);
+  font-size: medium;
+  
+}
+
+/* who we are */
+@keyframes fullScale {
+0%{
+ transform: scaleX(0);
+}
+25%{
+ transform: scaleX(.1);
+}
+50%{
+transform: scaleX(.2);
+}
+75%{
+ transform: scale(.5);
+}
+100%{
+ transform: scale(.6);
+}
+  
+}
+.who{
+background-image:  url("images/solar-energy-g7e9e34edb_1920.jpg");
+  position: relative;
+  filter: grayscale(0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+   
+  
+}
+.who-container{
+background-color: rgb(3, 77, 95);
+color: white;
+font-weight: 500;
+padding: 30px 20px;
+font-size: small;
+width: 90%;
+position: absolute;
+right: 5%;
+top: -5%;
+  transform: (-50%, -50%);
+  animation-name: fullScale;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-timing-function: linear;
+}
+.who-text{
+margin-left: 10px;
+}
+.who p{
+margin-top: 10px;
+line-height: 0.7cm;
+
+}
+.who h4{
+margin-top: 15px;
+color: yellow;
+}
+
+
+/* why solar */
+.why{
+ background-color: white;
+ 
+}
+.heading{
+ text-align: center;
+ font-weight: bold;
+ font-size:medium ;
+ padding: 5vh 0;
+ color:rgb(3, 77, 95);
+}
+.solar-cards{
+display: flex;
+justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 10vh;
+
+}
+.card-img >img{
+margin: auto;
+display: block;
+}
+.card{
+  width: 350px;
+  margin: 10px;
+  padding-top: 20px;
+  overflow:hidden;
+  line-height: 0.7cm;
+  padding: 10px;
+  box-shadow: 5px 2px 6px 2px rgb(224, 221, 221);
+
+}
+.card > article{
+padding: 13px;
+}
+.card > article > h3{
+color: rgb(3, 77, 95);
+padding: 10px;
+text-align: center;
+}
+.card:hover{
+background-color: rgb(3, 77, 95);
+color: white;
+}
+
+/* ceo */
+.ceo{
+background-color: rgb(3, 77, 95);
+ padding: 10px 4vw;
+}
+.ceo-flex{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.flyer{
+ padding: 10px;
+ 
+}
+
+.ceo-card{
+max-width: 750px;
+line-height: 0.9cm;
+font-size: small;
+ padding:0px 15px;
+ color: white;
+ margin-bottom: 10px;
+}
+.yellow{
+color: yellow;
+}
+
+/* achievements */
+.achievements{
+background-color: white;
+padding:2vh 12px;
+}
+.achieve{
+width: 90%;
+transition-property: width;
+transition: 2s;
+transition-delay: .5s;
+justify-content: space-around;
+}
+.achieve:hover{
+  width: 100%;
+}
+.achieve-card{
+align-items: center;
+font-size:xx-large;
+line-height: 1cm;
+flex-grow:initial;
+margin: 10px;
+color: rgb(18, 176, 216);
+}
+.achieve-text{
+ margin-left: 5px;
+}
+.achieve-text >p:last-child{
+font-weight: 600;
+font-size: medium;
+}
+
+/* project */
+.projects{
+  padding: 30px 0px;
+background-color: #fff;}
+
+.project-head{
+text-align: center;
+padding: 5vh;
+color:rgb(3, 77, 95);
+line-height: 0.8cm;
+}
+.project-head>p{
+font-size: small;
+}
+.first-gallery >img{
+margin: auto;
+}
+.gallery >img{
+ margin-bottom: 25px;
+}
+.gallery{
+flex-wrap: wrap;
+background-color: #ffffff;
+width: 100%;
+justify-content:center;
+text-align: center;
+padding-top: 10px;
+/* margin-bottom: 20px; */
+  box-shadow: 5px 2px 6px 2px rgb(224, 221, 221);
+
+
+}
+.gallery>p{
+padding:5px;
+color:black;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+font-size:small;
+}
+
+
+/* footer */
+footer{
+background-color:black;
+color: white;
+border-top: 1px solid rgb(3, 77, 95);
+}
+.footer-container{
+  padding: 10px;
+  padding-top: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.footer-container>div{
+max-width: 400px;
+margin-bottom: 20px;
+
+}
+.footer-container:first-child{
+line-height: 0.7cm;
+}
+.footer-container>div>h4{
+border-bottom: 2px solid rgb(18, 176, 216);
+padding-bottom: 5px;
+width: 80px;
+
+}
+.footer-container>div>ul>li{
+list-style: none;
+padding:5px 0px;
+}
+
+.footer-container>div>ul>li>a{
+text-decoration: none;
+color: rgb(18, 176, 216);
+}
+.footer-container>div>ul>li>a:hover{
+border-bottom: 1px solid rgb(18, 176, 216);
+}
+.footer-right{
+background-color: rgb(3, 77, 95);
+color: white;
+padding: 10px;
+font-size: small;
+text-align: center;
+}
+
+
+
+
+/* media query for 800max */
+@media screen and (max-width: 800px){
+html,body{
+ font-size: 13px;
+ padding: 0;
+ margin: 0;
+
+}
+.nav-top a{
+font-size: smaller;
+}
+.nav-top img{
+width: 20px;
+height: 20px;
+}
+.banner-text{
+width: 500px;
+}
+nav{
+display: none;
+}
+.close{
+display: block;
+}
+nav ul{
+flex-direction: column;
+background-color: rgb(8, 104, 128);
+z-index:4;
+align-items: center;
+position: fixed;
+height: 100%;
+width: 200px;
+right: 0;
+padding-top: 30px;
+}
+nav ul >li{
+padding-right: 0;
+border-right: 0;
+margin-bottom: 10vh;
+}
+.navbar{
+justify-content: space-between;
+padding: 10px 0px;
+}
+.navbar a{
+color: yellow;
+}
+.navbar a:hover{
+color: rgb(114, 210, 235);
+}
+.menu{
+display: block;
+cursor: pointer;
+}
+.banner{
+height: 80vh;
+}
+.banner-text{
+width: 400px;
+display: flex;
+flex-direction: column;
+line-height: 0.8cm;
+text-align: center;
+justify-content: center;
+align-items: center;
+padding:0px 10vw;
+top: 5.3%;
+ left: 50%;
+  transform: translate(-50%, -50%);
+}
+.overlay{
+background-image: linear-gradient(to left,rgb(18, 176, 216) , black 0%);
+
+}
+.who{
+height: 122vh;
+}
+
+.who > .who-container{
+flex-direction: column;
+justify-content: center;
+align-items: center;
+ animation-name: fullScale;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+}
+.who figure>img{
+width: 320px;
+animation: none;
+
+}
+.why{
+padding-top: 5vh;
+}
+
+.flyer > img{
+ height: 400px;
+ width: 250px;
+}
+.ceo-flex{
+flex-wrap: wrap-reverse;
+}
+.achieve{
+ flex-wrap: wrap;
+}
+.achieve-card{
+font-size: medium;
+line-height: 0.8cm;
+}
+.achieve-card>img{
+width: 120px;
+}
+.achieve-text>p:first-child{
+font-size: x-large;
+}
+
+/* project */
+.gallery>img{
+width: 280px;
+margin: auto;
+}
+.footer-container{
+flex-direction: column;
+}
+}
+
+
+/* media query for 300max */
+@media screen and (max-width: 400px){
+
+.logo > img{
+width: 180px;
+padding-right: 5px;
+}
+.banner-text{
+top: 5.5%;
+width: 350px;
+}
+.banner-text >button{
+height: 40px;
+width: 150px;
+}
+.who-container > figure> img{
+width: 290px;
+}
+.card-img > img{
+width: 290px;
+}
+.achieve-card >img{
+width: 100px;
+height: 100px;
+}
+.gallery > img{
+width: 290px;
+height: 310px;
+}
+}
